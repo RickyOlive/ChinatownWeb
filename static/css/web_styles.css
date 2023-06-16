@@ -1,7 +1,17 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+.image {
+    height: 32rem;
+    width: auto;
+    object-fit: cover;
+  }
 
+  @media (min-width: 768px) {
+    .image {
+      object-fit: contain;
+    }
+  }
 
 body {
   padding-top: 3rem;
