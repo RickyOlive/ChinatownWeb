@@ -4,6 +4,19 @@
 
 {% load static %}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    var navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        navbarCollapse.classList.remove('show');
+      });
+    });
+  });
+</script>
+
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #e2dedb">
     <div class="container-fluid">
