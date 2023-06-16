@@ -33,7 +33,13 @@ body {
 }
 .navbar-brand  {
     color: #ca4333 !important;
+    display: flex ;
+    align-items: center;
 }
+
+  .logo-text {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
 
 
 /* CUSTOMIZE THE CAROUSEL
