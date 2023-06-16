@@ -7,7 +7,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #e2dedb">
     <div class="container-fluid">
-      <a class="navbar-brand" >
+      <a class="navbar-brand" href="#">
         <img src="{% static 'images/chinatown_logo.jpeg' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" >
       </a>
       <button class="navbar-toggler custom-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,16 +16,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style="color: #ca4333" href="#">Home</a>
+            <a class="nav-link" style="color: #ca4333" href="#Menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #ca4333" href="#">Menu</a>
+            <a class="nav-link" style="color: #ca4333" href="#About">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #ca4333" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #ca4333" href="#">Contact</a>
+            <a class="nav-link" style="color: #ca4333" href="#Contact">Contact</a>
           </li>
         </ul>
 
@@ -33,6 +30,8 @@
     </div>
   </nav>
 </header>
+
+
 
 <main>
 
@@ -44,38 +43,19 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></svg>
+        <img src="{% static 'images/chinatown_food1.jpeg' %}" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; padding-top: 20px;">
 
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1 >Authentic New York Style Chinese Food</h1>
-            <p>Experience the flavors of Chinatown in Naples.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Explore Our Menu</a></p>
-          </div>
-        </div>
+
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></svg>
+        <img src="{% static 'images/chinatown_food2.jpeg' %}" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; padding-top: 20px;" >
 
-        <div class="container">
-          <div class="carousel-caption">
-            <h1 >Celebrate Chinese New Year with Us</h1>
-            <p >Join our festive celebrations and enjoy special offers.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a></p>
-          </div>
-        </div>
+
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></svg>
+        <img src="{% static 'images/chinatown_general.jpg' %}" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; padding-top: 20px;" >
 
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1 >Private Events and Catering</h1>
-            <p >Host your next event with us and enjoy our catering services.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Book Now</a></p>
-          </div>
-        </div>
-      </div>
+
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,50 +66,77 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  </div>
 
   <div class="container marketing">
+
+      <hr class="featurette-divider" id="Menu" style="margin-top: -50px">
 
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading" style="color: #ca4333">Discover the Art of Chinese Cuisine. Indulge in an authentic culinary journey.</h2>
-        <p class="lead" style="color: #ca4333">Experience the rich flavors and cultural heritage of China through our carefully crafted dishes.</p>
+        <p class="lead" style="color: #c2833a">Experience the rich flavors and cultural heritage of China through our carefully crafted dishes.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" /><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" /><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text></svg>
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="About">
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading" style="color: #ca4333">Celebrate Special Occasions with Us. Memorable moments made unforgettable.</h2>
-        <p class="lead" style="color: #ca4333">Create lasting memories by hosting your private events and celebrations with our exceptional catering services.</p>
+        <h2 class="featurette-heading" style="color: #ca4333">Experience Chinese Hospitality. Feel welcomed and valued.</h2>
+        <p class="lead" style="color: #c2833a">Our warm and attentive staff ensures that your dining experience is nothing short of extraordinary.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" /><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text></svg>
+        <img src="{% static 'images/chinatown_inside.jpeg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" height="500" width="500">
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="Contact">
 
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading" style="color: #ca4333">Experience Chinese Hospitality. Feel welcomed and valued.</h2>
-        <p class="lead" style="color: #ca4333">Our warm and attentive staff ensures that your dining experience is nothing short of extraordinary.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" /><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text></svg>
-      </div>
+  <div class="col-md-7">
+    <h2 class="featurette-heading" style="color: #ca4333">Visit Us</h2>
+    <p class="lead" style="color: #c2833a">Conveniently located off Pine Ridge Rd, one block west of Home Depot, next to Hess gas station, at the corner of Yahl St. Between two major roads, Airport Pulling Rd and Goodlet Frank Rd.</p>
+
+    <!-- Address Section -->
+    <div>
+      <h4>Address</h4>
+      <p>2059 Pine Ridge Rd</p>
+      <p>Naples, FL 34109</p>
     </div>
 
+    <!-- Phone Number Section -->
+    <div>
+      <h4>Phone Number</h4>
+      <p>(239) 513-9881</p>
+    </div>
 
-
+    <!-- Hours of Operation Section -->
+    <div>
+      <h4>Hours of Operation</h4>
+      <p>Monday-Thursday: 11pm-9pm</p>
+      <p>Friday-Saturday: 11am-10pm</p>
+      <p>Sunday: 12-9pm</p>
+    </div>
   </div>
+  <div class="col-md-5 d-flex align-items-center justify-content-center">
+    <img src="{% static 'images/chinatown_front.jpeg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded" >
+  </div>
+</div>
+</div>
+
+
+
+
+  </hr>
 
   <div class="container">
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
-          <p style="color: #ca4333">2023 - Chinatown of Naples</p>
+          <p style="color: #ca4333">2023 - Chinatown of Naples - <a style="color: #ca4333"href="#">Back to Top</a></p>
+
     </footer>
   </div>
 
